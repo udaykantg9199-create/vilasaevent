@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif-luxury: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-subheading: 'Cormorant Garamond', Georgia, serif;
+  --font-brand: 'Cinzel', 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --color-gold-300: #f7e7b4;
+  --color-gold-400: #e6c86e;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #c59b27;
+  --color-gold-700: #aa7c11;
+
+  --color-burgundy-950: #0f0408;
+  --color-burgundy-900: #1a050c;
+  --color-burgundy-800: #240610;
+  --color-burgundy-700: #380a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #0a0809;
+  color: #f7f4ed;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-serif-luxury {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-subheading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-brand {
+  font-family: 'Cinzel', 'Playfair Display', serif;
+  letter-spacing: 0.2em;
+}
+
+/* Luxury Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0809;
+}
+::-webkit-scrollbar-thumb {
+  background: #c59b27;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e6c86e;
+}
+
+/* Metallic Gold Textures & Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fbf0ce 0%, #d4af37 40%, #c59b27 70%, #fbf0ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f7e7b4 0%, #d4af37 40%, #c59b27 80%, #aa7c11 100%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+.bg-burgundy-rich {
+  background-color: #240610;
+}
+
+.bg-burgundy-deep {
+  background-color: #1a050c;
+}
+
+/* Hide scrollbar for clean horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle Film Grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
